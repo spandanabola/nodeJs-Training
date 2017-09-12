@@ -1,0 +1,16 @@
+  npm install hashcode
+var encode = require( 'hashcode' ).hashCode;
+var hash = encode().value( "my string value"); 
+
+console.log(JSON.stringify(req.headers));
+
+var userAgent = req.headers['user-agent']; 
+
+console.log(new Buffer("Hello World").toString('base64'));
+console.log(Buffer.from("Hello World").toString('base64'))
+
+res.sendStatus(200);
+
+res.status(404).send("Oh uh, something went wrong");
+
+res.sendStatus(404);
